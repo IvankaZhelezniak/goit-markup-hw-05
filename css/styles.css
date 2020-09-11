@@ -96,6 +96,11 @@ img {
 
 .site-nav .link.current {
   position: relative;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.current:hover {
   color: var(--accent-color);
 }
 
@@ -113,6 +118,11 @@ img {
 
 .site-nav .link.portfolio {
   position: relative;
+  color: var(--title-text-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.site-nav .link.portfolio:hover {
   color: var(--accent-color);
 }
 
@@ -619,31 +629,18 @@ img {
 
 /* Стилизацый 2 страницы ПОРТФОЛИО main*/
 
-.button-all {
-  border-radius: 4px;
-  padding: 6px 22px;
-  text-align: center;
-
-  background-color: var(--secondary-bg-color);
-  color: var(--title-text-color);
-  font-family: inherit;
-  display: inline-block;
+.button-list .button-all {
   min-width: 73px;
   height: 38px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62em;
-  letter-spacing: 0.03em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.button-all:hover,
+/* .button-all:hover,
 .button-all:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   background-color: var(--accent-color);
   color: var(--primary-white-color);
-}
+} */
 
 .buttons {
   border-radius: 4px;
@@ -653,19 +650,24 @@ img {
   color: var(--title-text-color);
   background-color: var(--secondary-bg-color);
   font-family: inherit;
-  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62px;
   letter-spacing: 0.03em;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .buttons:hover,
 .buttons:focus {
   background-color: var(--accent-color);
   color: var(--primary-white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button-list .button-veb {
